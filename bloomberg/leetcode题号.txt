@@ -9,7 +9,14 @@ done2 117        Populating Next Right Pointers in Each Node II        33.6%    
 done2 62        Unique Paths        40.3%        Medium        
 done2 42        Trapping Rain Water        36.1%        Hard        
 done2 146        LRU Cache        17.0%        Hard        
-done2 206        Reverse Linked List        44.7%        Easy        
+done2 206        Reverse Linked List        44.7%        Easy 
+prev = None
+while head:
+    curr = head
+    head = head.next
+    curr.next = prev
+    prev = curr
+return prev       
 done2 160        Intersection of Two Linked Lists        30.3%        Easy       https://www.youtube.com/watch?v=boL6SCyQqSk
 done2 122        Best Time to Buy and Sell Stock II        46.4%        Easy        
 done2 53        Maximum Subarray        39.3%        Easy        
@@ -24,8 +31,8 @@ done2 2        Add Two Numbers        27.2%        Medium
 done2 268        Missing Number        44.0%        Easy        
 done2 7        Reverse Integer        24.1%        Easy        
 done2 98        Validate Binary Search Tree        22.9%        Medium        https://www.youtube.com/watch?v=Jq0Wk9xeQ0U
-done2 151(思考时间久)        Reverse Words in a String        15.7%        Medium              https://www.youtube.com/watch?v=Vx1f5PsY4p8
-done2 215        Kth Largest Element in an Array        38.5%        Medium        https://www.youtube.com/watch?v=ow04KXJ0kG4
+done2 151        Reverse Words in a String        15.7%        Medium              https://www.youtube.com/watch?v=Vx1f5PsY4p8
+done2 215(思考时间久)        Kth Largest Element in an Array        38.5%        Medium        https://www.youtube.com/watch?v=ow04KXJ0kG4
 done2 88        Merge Sorted Array        31.8%        Easy        
 done2 49        Group Anagrams        33.4%        Medium        
 done2 102        Binary Tree Level Order Traversal        38.5%        Medium        
@@ -43,7 +50,7 @@ done2 13        Roman to Integer        44.9%        Easy
 done2 100        Same Tree        46.0%        Easy        
 done2 139        Word Break        29.2%        Medium        
 done2 189        Rotate Array        24.1%        Easy        
-done2 15        3Sum        21.5%        Medium        
+done2 15 复习       3Sum        21.5%        Medium        
 done2 101        Symmetric Tree        38.0%        Easy          https://www.youtube.com/watch?v=hL4sXXZ1K1Y
 done2 172        Factorial Trailing Zeroes        35.6%        Easy        https://www.youtube.com/watch?v=CPnQhvD-ZxU
 done2 33 (二分法做不出来) !!!!!      Search in Rotated Sorted Array        32.1%        Medium https://blog.csdn.net/yefengzhichen/article/details/52372407  (一定要看！!!!)    
